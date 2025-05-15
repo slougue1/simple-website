@@ -7,3 +7,8 @@
     -Build and tag the image from the Dockerfile
     -Push the built image on dockerhub
 4.Deploy the .py application
+
+Ps. -Jenkins run as jenkins user and jenkins group 
+     (that is why when we ls in /var/lib/jenkins/workspace, all the files's username and groups are jenkins)
+    -So If I want jenkins to have access to docker command, the add jenkins user in docker group to allow jenkins access to docker
+    -sudo usermod -aG docker jenkins
